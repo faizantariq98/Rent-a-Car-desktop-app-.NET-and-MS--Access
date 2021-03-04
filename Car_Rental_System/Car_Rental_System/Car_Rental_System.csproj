@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89166579-AE2C-4CE8-9CA3-927D11A5924B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Car_Rental_System</RootNamespace>
+    <AssemblyName>Car_Rental_System</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingReport.Designer.cs">
+      <DependentUpon>BookingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car.Designer.cs">
+      <DependentUpon>Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarReport.Designer.cs">
+      <DependentUpon>CarReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changepass.Designer.cs">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReport.Designer.cs">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayEmp.Designer.cs">
+      <DependentUpon>DisplayEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuel.Designer.cs">
+      <DependentUpon>Fuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelReport.Designer.cs">
+      <DependentUpon>FuelReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMenu.Designer.cs">
+      <DependentUpon>ReportMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingReport.resx">
+      <DependentUpon>BookingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car.resx">
+      <DependentUpon>Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarReport.resx">
+      <DependentUpon>CarReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changepass.resx">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReport.resx">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayEmp.resx">
+      <DependentUpon>DisplayEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuel.resx">
+      <DependentUpon>Fuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelReport.resx">
+      <DependentUpon>FuelReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportMenu.resx">
+      <DependentUpon>ReportMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-840948576-2048x2048.jpg" />
+    <None Include="Resources\gettyimages-171266998-2048x2048.jpg" />
+    <None Include="Resources\gettyimages-621475734-2048x2048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-view-automobile-sales-salon-450w-158667548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asphalt-auto-automobile-136872.jpg" />
+    <None Include="Resources\automobile-automotive-car-1687147.jpg" />
+    <None Include="Resources\auto-automobile-automotive-261985.jpg" />
+    <None Include="Resources\fuel-pump-gas-station-gasoline-1563510.jpg" />
+    <None Include="Resources\asphalt-auto-automobile-712618.jpg" />
+    <None Include="Resources\auto-automobile-automotive-919073.jpg" />
+    <None Include="Resources\asphalt-auto-automobile-164634.jpg" />
+    <None Include="Resources\man-holding-tablet-renting-car-450w-557131762.jpg" />
+    <None Include="Resources\man-writing-on-notepad-book-450w-768749212.jpg" />
+    <None Include="Resources\gettyimages-171266998-2048x20481.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
